@@ -15,21 +15,19 @@
     --Font-size: 15px;
 }
 
-
 body{
     font-family: 'Poppins', 'sans-serif'!important;
     max-width: 394px;
     margin:auto!important;
     font-size: var(--Font-size)!important;
     color: var(--Very-Dark-Blue);
+    background-color: var(--Very-Light-Gray)!important;
 }
-
 
 .container{
     margin-top: 60px;
     margin-bottom: 40px;
 }
-
 
 .card{
     border:none!important;
@@ -79,6 +77,31 @@ body{
 .lh-3{
     line-height: 1.9em;
 }
+
+
+@media(min-width:992px){
+    body{
+        max-width: 1000px;
+    }
+
+
+    .w-xxl{
+        max-width: 550px!important;
+    }
+
+    .card-img{
+        width: 65px!important;
+        height: 65px!important;
+    }
+}
+
+@media(min-width:1400px){
+    body{
+        max-width: 1174px;
+    }
+
+}
+
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
